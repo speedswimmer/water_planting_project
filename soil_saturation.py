@@ -3,14 +3,14 @@ import time
 import json
 import board
 import busio
-import adafruit_ads1x15.ads1015 as ADS
+import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.analog_in import AnalogIn
 from datetime import datetime
 
 # Create the I2C bus
 i2c = busio.I2C(board.SCL, board.SDA)
 # Create single-ended input on channel 0
-ads = ADS.ADS1015(i2c)
+ads = ADS.ADS1115(i2c)
 chan = AnalogIn(ads, ADS.P0)
 
 with open("cap_config.json") as json_data_file:
@@ -21,7 +21,6 @@ def time_stamp():
     now=datetime.now()
     timestamp = now.strftime('%d.%m.%Y %H:%M')
     return timestamp
-
 
 def percent_translation(raw_val):
     per_val = abs((raw_val-config_data["zero_saturation"])/(config_data["full_s>
