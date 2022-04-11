@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
         <title>{{ title }}</title>
+        <meta charset ="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>Hello, World!</h1>
-        <h2>The date and time on the server is: {{ time }}</h2>
+        <div class="header">Home Server - Hanau</div>
+        <hr />
+        <div class="article">
+            <h4>The date/time on the server is: {{ time }}</h4>
+            <h4>Temperature level: {{ temp }}°C</h4>
+            <h4>Humidity-Level is at: {{ humidity }}%</h4>
+        </div>
     </body>
 </html>
