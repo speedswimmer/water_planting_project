@@ -1,0 +1,14 @@
+body {
+    background: blue;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    color:azure;
+    font-size: larger;
+}
+
+.article {
+    color:yellow;
+}
