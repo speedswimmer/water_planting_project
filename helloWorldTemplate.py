@@ -22,9 +22,9 @@ def hello():
     #
     #
     now = datetime.datetime.now()
-    timeString = now.strftime("%Y-%m-%d, %H:%M")
+    timeString = now.strftime("%d-%m-%Y, %H:%M")
     templateData = {
-        'title' : 'HELLO!',
+        'title' : 'Home-Server',
         'time' : timeString
         }
     return render_template('index.html', **templateData)
