@@ -1,6 +1,7 @@
 body {
-    background: blue;
+    background: rgb(28, 28, 135);
     color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .header {
@@ -9,6 +10,36 @@ body {
     font-size: larger;
 }
 
-.article {
+.main {
     color:yellow;
+}
+
+.footer {
+    text-align: center;
+    font-size: x-small;
+}
+
+.special{
+    text-decoration: underline;
+    font-size: small;
+}
+
+#navigation {
+    font-size: smaller;
+}
+
+/* Universal Selector */
+* {
+    margin: 5px;
+    padding: 3px;
+/*    border: 1px dotted white;*/
+}
+
+/* Style for links */
+a {
+    text-decoration: none;
+    color: white
+}
+a:hover{
+    color:violet;
 }
