@@ -6,18 +6,19 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="header">Home Server - Hanau</div>
-        <hr />
+        <div class="header"> {{ time }} </div>
+        <div class="top">Home-Server Hanau</div>
         <div class="main">
-            <p class="special">Date/Time: {{ time }}</p>
-            <p>Temperature level: {{ temp }}°C</p>
-            <p>Humidity level is at: {{ humidity }}%</p>
+            <ul> 
+                <li>Temperature level: {{ temp }}°C</li>
+                <li>Humidity level is at: {{ humidity }}%</li>
+            </ul>
         </div>
         <div id="navigation">
             <a href="#">Navigation 1 |</a>
             <a href="#"> Navigation 2 |</a>
             <a href="#"> Navigation 3</a>
         </div>
-        <div class="footer">&copy 2022 Matthias Hartmann</div>
+        <div class="footer">&copy 2022 Home-Security</div>
     </body>
 </html>
