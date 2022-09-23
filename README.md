@@ -1,5 +1,5 @@
-To start a process or application automatically on Raspberry Pi at startup, use systemd service files
-systemd service files can be found at cd /lib/systemd/system/
+To start a process or application automatically on Raspberry Pi at startup, use systemd service files.
+Systemd service files can be found at cd /lib/systemd/system/
 e.g. reboot_logging.service or soil_moisture.service
 
 
